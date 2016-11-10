@@ -42,3 +42,48 @@ gulp.task('watch', ['browserSync','sass'], function (){
   gulp.watch('app/*.php', browserSync.reload);
   gulp.watch('app/js/**/*.js', browserSync.reload);
 });
+
+//-- Useref
+gulp.task('useref', function(){
+  return gulp.src('app/*.+(html|php)')
+    .pipe(useref())
+    .pipe(gulpIf('*.js', uglify()))
+    .pipe(gulpIf('*.css', cssnano()))
+    .pipe(gulp.dest('dist'));
+});
+
+//-- Images
+gulp.task('images', function(){
+  return gulp.src('app/images/**/*.+(png|jpg|jpeg|gif|svg)')
+  // Caching images that ran through imagemin
+  .pipe(cache(imagemin({
+      interlaced: true
+    })))
+  .pipe(gulp.dest('dist/images'));
+});
+
+//-- Fonts
+gulp.task('fonts', function() {
+  return gulp.src('app/fonts/**/*.+(ttf|eot|otf|svg|woff|woff2)')
+  .pipe(gulp.dest('dist/fonts'));
+});
+
+//-- Clean
+gulp.task('clean:dist', function() {
+  return del.sync('dist');
+});
+
+//-- Run Sequence
+gulp.task('build', function (callback) {
+  runSequence('clean:dist',
+    ['sass', 'useref', 'images', 'fonts'],
+    callback
+  );
+});
+
+//-- Default Task
+gulp.task('default', function (callback) {
+  runSequence(['sass','browserSync', 'watch'],
+    callback
+  );
+});

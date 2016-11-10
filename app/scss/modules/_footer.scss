@@ -17,16 +17,31 @@
     }
   }
 
+  &__margin-b-small {
+    margin-bottom: 3rem;
+  }
+
+  &__logo {
+    margin-bottom: 2rem;
+  }
+
+  &__redes {
+    a > i {
+      color: $navy-iconos;
+      margin: 1.5rem 1rem 0;
+    }
+  }
+
   &__icon {
-    float: left;
     color: $azul;
-    min-width: 3.2rem;
-    margin-right: 2rem;
+    float: left;
     margin-left: auto;
+    margin-right: 2rem;
+    min-width: 3.2rem;
 
     &::after {
-      content: "";
       clear: both;
+      content: '';
     }
   }
 
@@ -34,4 +49,13 @@
     color: $blanco;
   }
 
+}
+
+
+.copyright {
+  background-color: $navy-black;
+  p {
+    font-size: 1.4rem;
+    margin: 2rem 0;
+  }
 }
