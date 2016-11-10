@@ -1,0 +1,27 @@
+{
+  "name": "ebasabe-website",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": "index.html",
+  "scripts": {
+    "test": "gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edubasabe/ebasabe-web.git"
+  },
+  "keywords": [
+    "ebasabe",
+    "web",
+    "designer"
+  ],
+  "author": "Edu Basabe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edubasabe/ebasabe-web/issues"
+  },
+  "homepage": "https://github.com/edubasabe/ebasabe-web#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
