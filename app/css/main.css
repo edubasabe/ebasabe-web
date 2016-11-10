@@ -1,0 +1,56 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.btn-main {
+  background-color: #007ff3;
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.form-control {
+  border-radius: 3px;
+  min-height: 4.6rem;
+}
+
+.footer {
+  background-color: #161c24;
+  padding: 40px 0;
+}
+
+.footer__title {
+  color: #fff;
+  font-size: 24px;
+}
+
+.footer__parrafo {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.footer__parrafo--justificado {
+  color: rgba(255, 255, 255, 0.4);
+  text-align: justify;
+}
+
+.footer__icon {
+  float: left;
+  color: #007ff3;
+  min-width: 3.2rem;
+  margin-right: 2rem;
+  margin-left: auto;
+}
+
+.footer__icon::after {
+  content: "";
+  clear: both;
+}
+
+.footer__info {
+  color: #fff;
+}
