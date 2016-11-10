@@ -3,4 +3,35 @@
   background-color: $navy-footer;
   padding: 40px 0;
 
+  &__title {
+    color: $blanco;
+    font-size: 24px;
+  }
+
+  &__parrafo {
+    color: rgba($blanco, .4);
+
+    &--justificado {
+      color: rgba($blanco, .4);
+      text-align: justify;
+    }
+  }
+
+  &__icon {
+    float: left;
+    color: $azul;
+    min-width: 3.2rem;
+    margin-right: 2rem;
+    margin-left: auto;
+
+    &::after {
+      content: "";
+      clear: both;
+    }
+  }
+
+  &__info {
+    color: $blanco;
+  }
+
 }
