@@ -1,8 +1,25 @@
 .btn {
 
-  &-main {
+  &-primary {
     background-color: $azul;
     color: $blanco;
-    font-size: 1.6rem;
+
+    &:hover {
+      background-color: rgba($azul, .7);
+      color: $blanco;
+      transition: background-color .3s ease-out;
+    }
+  }
+
+  &-secondary {
+    background-color: rgba(0, 126, 242, .10);
+    border: 1px solid $azul;
+    color: $blanco;
+
+    &:hover {
+      background-color: $azul;
+      color: $blanco;
+      transition: background-color .3s ease-out;
+    }
   }
 }

@@ -1,0 +1,30 @@
+.hero {
+  background: url('../../images/hero/bg-midnight-imagen-bg.png') no-repeat;
+  background-size: cover;
+  min-height: 60rem;
+  padding-top: 10.2rem;
+
+  &__titulo {
+    color: $blanco;
+    font-size: 4.2rem;
+  }
+
+  &__parrafo {
+    color: rgba($blanco, .5);
+    line-height: 2.4rem;
+    margin-bottom: 3rem;
+  }
+
+  &__btn {
+    font-size: 1.8rem;
+    margin-right: 3rem;
+    padding: 1rem 2rem;
+
+    @media (max-width: 979px) {
+      &__btn {
+        margin-bottom: 3rem;
+        box-shadow: 3px 3px 3px red;
+      }
+    }
+  }
+}

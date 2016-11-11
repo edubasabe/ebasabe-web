@@ -1,7 +1,10 @@
+@import '../../node_modules/bootstrap/dist/css/bootstrap';
+@import '../../node_modules/font-awesome/scss/font-awesome';
+@import './modules/_query';
 @import './modules/_variables';
 @import './modules/_global';
+@import './modules/_hero';
 @import './modules/_btn';
 @import './modules/_form';
 @import './modules/_headline';
 @import './modules/_footer';
-@import '../../node_modules/font-awesome/scss/font-awesome';

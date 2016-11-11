@@ -1,0 +1,31 @@
+// Mobile First Method
+// -- Custom, iPhone Retina -- //
+@mixin iphone-retina {
+  @media only screen and (min-width: 320px) {
+    @content;
+    }
+}
+// -- Extra Small Devices, Phones -- //
+@mixin xsDevices {
+  @media only screen and (min-width: 480px) {
+    @content;
+    }
+}
+// -- Small Devices, Tablets -- //
+@mixin smDevices {
+  @media only screen and (min-width: 768px) {
+    @content;
+    }
+}
+// -- Medium Devices, Desktops -- //
+@mixin msDevices {
+  @media only screen and (min-width: 992px) {
+    @content;
+    }
+}
+// -- Large Devices, Wide Screens -- //
+@mixin lgDevices {
+  @media only screen and (min-width: 1200px) {
+    @content;
+    }
+}
