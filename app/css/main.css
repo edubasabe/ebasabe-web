@@ -10961,6 +10961,10 @@ a:focus, a:hover {
   }
 }
 
+.section--padding {
+  padding: 8rem 0;
+}
+
 .btn-primary {
   background-color: #007ff3;
   color: #fff;
