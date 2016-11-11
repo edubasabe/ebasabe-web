@@ -20,11 +20,9 @@
     margin-right: 3rem;
     padding: 1rem 2rem;
 
-    @media (max-width: 979px) {
-      &__btn {
+    @include xxs-device {
         margin-bottom: 3rem;
-        box-shadow: 3px 3px 3px red;
-      }
+        margin-right: 1rem;
     }
   }
 }

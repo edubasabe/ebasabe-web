@@ -10954,10 +10954,10 @@ a:focus, a:hover {
   padding: 1rem 2rem;
 }
 
-@media (max-width: 979px) {
-  .hero__btn__btn {
+@media only screen and (min-width: 320px) {
+  .hero__btn {
     margin-bottom: 3rem;
-    box-shadow: 3px 3px 3px red;
+    margin-right: 1rem;
   }
 }
 
