@@ -10930,6 +10930,10 @@ a:focus, a:hover {
   color: #007ff3;
 }
 
+.navbar {
+  margin-bottom: 0;
+}
+
 .hero {
   background: url("../../images/hero/bg-midnight-imagen-bg.png") no-repeat;
   background-size: cover;

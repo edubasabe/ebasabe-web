@@ -19,10 +19,16 @@ if (tablet()) {
 // Waypoints
 // --
 var waypoint = new Waypoint({
-  element: document.getElementById('page-top'),
+  element: document.getElementById('servicios'),
   handler: function(direction) {
-    alert('You have scrolled to a thing');
-  }
+    if (direction == 'down') {
+      $('.navbar').addClass('navbar-fixed-top');
+    }
+    else if (direction == 'up') {
+      $('.navbar').removeClass('navbar-fixed-top');
+    }
+  },
+  offset: '5%'
 });
 
 $(document).on('ready', function() {
