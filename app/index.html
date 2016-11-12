@@ -18,7 +18,36 @@
     <![endif]-->
 </head>
 
-<body>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <nav>
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+       <div class="container">
+         <div class="navbar-header page-scroll">
+             <button type="button" class="navbar-toggle navbar--icon" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                 <span class="sr-only">Toggle navigation</span>
+                 <span></span>
+                 <span></span>
+                 <span></span>
+             </button>
+             <a class="navbar-brand page-scroll" href="#page-top">Ebasabe</a>
+             <!-- <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/LogoHeader.svg" alt=""> -->
+         </div><!-- navbar-header -->
+
+         <!-- Collect the nav links, forms, and other content for toggling -->
+                  <div class="collapse navbar-collapse navbar-ex1-collapse">
+                      <ul class="nav navbar-nav navbar-right">
+                          <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                          <li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
+                          <li><a class="page-scroll" href="#about">Sobre mí</a></li>
+                          <li><a class="page-scroll" href="#services">Portafolio</a></li>
+                          <li><a class="page-scroll" href="#">Blog</a></li>
+                          <li><a class="page-scroll" href="#contact">Contacto</a></li>
+                      </ul>
+                  </div>
+                  <!-- /.navbar-collapse -->
+       </div><!-- container -->
+     </div><!-- navbar -->
+    </nav>
     <header>
         <div class="hero">
             <div class="container">
@@ -121,9 +150,10 @@
             </div>
         </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="./js/main.js" type="text/javascript"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
+    <script src="js/noframework.waypoints.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

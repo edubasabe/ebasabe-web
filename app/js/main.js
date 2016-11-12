@@ -15,6 +15,16 @@ if (tablet()) {
     //  $('.texto').insertAfter('.imagen');
 }
 
+// --
+// Waypoints
+// --
+var waypoint = new Waypoint({
+  element: document.getElementById('page-top'),
+  handler: function(direction) {
+    alert('You have scrolled to a thing');
+  }
+});
+
 $(document).on('ready', function() {
 
 });
