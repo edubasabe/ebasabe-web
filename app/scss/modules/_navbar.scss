@@ -1,3 +1,39 @@
 .navbar {
   margin-bottom: 0;
+  min-height: 7rem;
+  transition: all 500ms ease-out;
+
+  &--bg-color {
+    background-color: $navy-nav;
+    border-color: $navy-nav;
+    transition: all 500ms ease-out;
+  }
+
+  &-brand {
+    display: flex;
+    height: 7rem;
+    // max-height: 7rem;
+    padding: 0 0 0 3rem;
+
+    > img {
+      align-self: center;
+      max-height: 3.4rem;
+    }
+  }
+}
+
+
+.navbar-nav {
+  > li {
+    > a {
+      color: $blanco;
+      padding: 2.5rem;
+
+      &:hover,
+      &:focus {
+        background-color: transparent;
+        color: $azul;
+      }
+    }
+  }
 }

@@ -2,7 +2,8 @@
   background: url('../../images/hero/bg-midnight-imagen-bg.png') no-repeat;
   background-size: cover;
   min-height: 60rem;
-  padding-top: 10.2rem;
+  padding-top: 17.2rem;
+  transition: 300s all ease-out;
 
   &__titulo {
     color: $blanco;
@@ -21,8 +22,8 @@
     padding: 1rem 2rem;
 
     @include xxs-device {
-        margin-bottom: 3rem;
-        margin-right: 1rem;
+      margin-bottom: 3rem;
+      margin-right: 1rem;
     }
   }
 }

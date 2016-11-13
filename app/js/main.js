@@ -3,7 +3,7 @@ function tablet() {
     if ($iW < 426) {
         return true;
     }
-    console.log($iW);
+    // console.log($iW);
 }
 
 // ---
@@ -18,18 +18,25 @@ if (tablet()) {
 // --
 // Waypoints
 // --
-var waypoint = new Waypoint({
-  element: document.getElementById('servicios'),
-  handler: function(direction) {
-    if (direction == 'down') {
-      $('.navbar').addClass('navbar-fixed-top');
-    }
-    else if (direction == 'up') {
-      $('.navbar').removeClass('navbar-fixed-top');
-    }
-  },
-  offset: '5%'
-});
+var navBar = $('.navbar');
+var heroRowHeader = $('#hero .container > .row');
+
+// var waypoint = new Waypoint({
+//   // element: document.getElementById('hero'),
+//   handler: function(direction) {
+//     if (direction == 'down') {
+//       navBar.addClass('navbar--bg-color');
+//     }
+//     else if (direction == 'up') {
+//       navBar.removeClass('navbar--bg-color');
+//     }
+//   },
+//   offset: 300
+// });
+
+//--
+// Scroll Top Tradicional
+// --
 
 $(document).on('ready', function() {
 

@@ -10,7 +10,10 @@
     <meta name="author" content="Eduardo Basabe">
     <title>Ebasabe Design</title>
     <link rel="icon" href="favicon.gif" type="image/gif" sizes="16x16">
+
+    <!-- build:css css/styles.min.css -->
     <link rel="stylesheet" href="/css/main.css">
+    <!-- endbuild -->
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
@@ -20,7 +23,7 @@
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
     <nav>
-      <div class="navbar navbar-default" role="navigation">
+      <div class="navbar navbar-fixed-top" role="navigation">
        <div class="container">
          <div class="navbar-header page-scroll">
              <button type="button" class="navbar-toggle navbar--icon" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -29,7 +32,7 @@
                  <span></span>
                  <span></span>
              </button>
-             <a class="navbar-brand page-scroll" href="#page-top">Ebasabe</a>
+             <a class="navbar-brand page-scroll" href="#page-top"><span class="sr-only">EBasabe</span><img src="./images/logo/main-logo.svg" alt="EBasabe Logo" class="img-responsive"/></a>
              <!-- <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/LogoHeader.svg" alt=""> -->
          </div><!-- navbar-header -->
 
@@ -169,12 +172,15 @@
             </div>
         </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="/js/noframework.waypoints.js"></script>
+    <!-- build:js js/scripts.min.js -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery-ui.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.waypoints.js"></script>
     <script src="/js/jquery.easing.min.js"></script>
     <script src="/js/scrolling-nav.js"></script>
     <script src="/js/main.js"></script>
+    <!-- endbuild -->
 </body>
 
 </html>
