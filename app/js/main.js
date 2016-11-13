@@ -1,6 +1,6 @@
 function tablet() {
     var $iW = $(window).width();
-    if ($iW < 426) {
+    if ($iW <= 767) {
         return true;
     }
     // console.log($iW);
@@ -35,9 +35,14 @@ var heroRowHeader = $('#hero .container > .row');
 // });
 
 //--
-// Scroll Top Tradicional
+// Menu Open
 // --
-
+var navBar = $('.navbar');
 $(document).on('ready', function() {
-
+$('.navbar--menu-icon').click(function() {
+  $(this).toggleClass('open');
+  if (!navBar.hasClass('navbar--bg-color')) {
+    navBar.addClass('navbar--bg-color');
+  }
+});
 });

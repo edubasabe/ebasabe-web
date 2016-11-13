@@ -10912,12 +10912,21 @@ button.close {
   clip: auto;
 }
 
+@font-face {
+  font-family: 'AktivGrotesk-Regular';
+  src: url("../../fonts/aktiv/AktivGrotesk-Regular.eot");
+  src: url("../../fonts/aktiv/AktivGrotesk-Regular.woff2") format("woff2"), url("../../fonts/aktiv/AktivGrotesk-Regular.woff") format("woff"), url("../../fonts/aktiv/AktivGrotesk-Regular.ttf") format("truetype"), url("../../fonts/aktiv/AktivGrotesk-Regular.svg#AktivGrotesk-Regular") format("svg"), url("../../fonts/aktiv/AktivGrotesk-Regular.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
   font-size: 62.5%;
 }
 
 body {
   font-size: 16px;
+  font-family: "AktivGrotesk-Regular", Helvetica, Arial, sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
@@ -10959,12 +10968,60 @@ a:focus, a:hover {
   max-height: 3.4rem;
 }
 
+.navbar-toggle {
+  border-color: transparent;
+  margin: 2rem;
+}
+
+.navbar--menu-icon {
+  cursor: pointer;
+  height: 30px;
+  padding: 5px 2px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  width: 30px;
+  z-index: 99;
+}
+
+.navbar--menu-icon span {
+  background-color: #3b3f49;
+  display: block;
+  height: 1px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  width: 25px;
+}
+
+.navbar--menu-icon span + span {
+  margin-top: 5px;
+}
+
+.navbar .open span {
+  background-color: #3b3f49;
+}
+
+.navbar .open span:nth-child(2) {
+  margin-top: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.navbar .open span:nth-child(3) {
+  opacity: 0;
+}
+
+.navbar .open span:nth-child(4) {
+  margin-top: -7px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
 .navbar-nav > li > a {
   color: #fff;
   padding: 2.5rem;
 }
 
-.navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
+.navbar-nav > li > a:focus, .navbar-nav > li > a:hover {
   background-color: transparent;
   color: #007ff3;
 }
@@ -10973,14 +11030,56 @@ a:focus, a:hover {
   background: url("../../images/hero/bg-midnight-imagen-bg.png") no-repeat;
   background-size: cover;
   min-height: 60rem;
-  padding-top: 17.2rem;
   -webkit-transition: 300s all ease-out;
   transition: 300s all ease-out;
 }
 
+@media only screen and (min-width: 320px) {
+  .hero {
+    padding: 8rem 0;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .hero {
+    padding: 8rem 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    padding-top: 17.2rem;
+  }
+}
+
+@media only screen and (min-width: 320px) {
+  .hero .imac {
+    max-width: 25rem;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .hero .imac {
+    max-width: 100%;
+  }
+}
+
 .hero__titulo {
   color: #fff;
-  font-size: 4.2rem;
+}
+
+@media only screen and (min-width: 320px) {
+  .hero__titulo {
+    font-size: 2.8rem;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero__titulo {
+    font-size: 4.2rem;
+    text-align: left;
+  }
 }
 
 .hero__parrafo {
@@ -10989,15 +11088,49 @@ a:focus, a:hover {
   margin-bottom: 3rem;
 }
 
+@media only screen and (min-width: 320px) {
+  .hero__parrafo {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero__parrafo {
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 320px) {
+  .hero__buttons {
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero__buttons {
+    text-align: left;
+  }
+}
+
 .hero__btn {
+  float: left;
   font-size: 1.8rem;
-  margin-right: 3rem;
   padding: 1rem 2rem;
 }
 
 @media only screen and (min-width: 320px) {
   .hero__btn {
+    float: none;
     margin-bottom: 3rem;
+  }
+}
+
+@media only screen and (min-width: 320px) {
+  .hero__btn--portafolio {
     margin-right: 1rem;
   }
 }
@@ -11034,6 +11167,10 @@ a:focus, a:hover {
 .form-control {
   border-radius: 3px;
   min-height: 4.6rem;
+}
+
+input[type='submit'] {
+  font-size: 1.6rem;
 }
 
 .footer {

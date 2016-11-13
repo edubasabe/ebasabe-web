@@ -6,3 +6,10 @@
   border-radius: 3px;
   min-height: 4.6rem;
 }
+
+input {
+
+  &[type='submit'] {
+    font-size: 1.6rem;
+  }
+}

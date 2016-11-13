@@ -3,7 +3,7 @@
 // --
 var navBar = $('.navbar');
 $(window).scroll(function() {
-    if (navBar.offset().top > 50) {
+    if (navBar.offset().top > 1) {
         $(".navbar-fixed-top").addClass("top-nav-collapse navbar--bg-color");
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse navbar--bg-color");
