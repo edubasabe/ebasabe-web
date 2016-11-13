@@ -2,12 +2,17 @@
 // jQuery to collapse the navbar on scroll
 // --
 var navBar = $('.navbar');
+var pageBody = $('body');
 $(window).scroll(function() {
+
+  if (pageBody.hasClass('nav-animation')) 
+  {
     if (navBar.offset().top > 1) {
         $(".navbar-fixed-top").addClass("top-nav-collapse navbar--bg-color");
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse navbar--bg-color");
     }
+  }
 });
 
 //--
