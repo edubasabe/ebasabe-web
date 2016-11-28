@@ -10939,6 +10939,10 @@ a:focus, a:hover {
   color: #007ff3;
 }
 
+.layout--padding-right {
+  padding-right: 115px;
+}
+
 .navbar {
   margin-bottom: 0;
   min-height: 7rem;
@@ -11171,6 +11175,103 @@ a:focus, a:hover {
 
 input[type='submit'] {
   font-size: 1.6rem;
+}
+
+.headline {
+  color: #3b3f49;
+  font-family: "AktivGrotesk-Regular", Helvetica, Arial, sans-serif;
+  font-size: 2.4rem;
+}
+
+.headline--subtitle {
+  color: rgba(59, 63, 73, 0.8);
+  font-size: 1.8rem;
+}
+
+.headline--title {
+  font-size: 3.4rem;
+}
+
+.headline--lead {
+  color: rgba(59, 63, 73, 0.6);
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+}
+
+.headline--justify {
+  text-align: justify;
+}
+
+.headline--no-margin {
+  margin: 0;
+}
+
+.sobre-mi__profile-img {
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  margin: 0 auto;
+  max-width: 202px;
+  overflow: hidden;
+}
+
+.sobre-mi__skill-list li:first-child span {
+  position: relative;
+}
+
+.sobre-mi__skill-list li:first-child span::before {
+  background-color: #007ff3;
+  content: '';
+  height: 1.2rem;
+  position: absolute;
+  width: 85%;
+}
+
+.sobre-mi__skill-list li:nth-child(2) span {
+  position: relative;
+}
+
+.sobre-mi__skill-list li:nth-child(2) span::before {
+  background-color: #f21c00;
+  content: '';
+  height: 1.2rem;
+  position: absolute;
+  width: 52%;
+}
+
+.sobre-mi__skill-list li:nth-child(3) span {
+  position: relative;
+}
+
+.sobre-mi__skill-list li:nth-child(3) span::before {
+  background-color: #00b362;
+  content: '';
+  height: 1.2rem;
+  position: absolute;
+  width: 75%;
+}
+
+.sobre-mi__skill-list li:last-child span {
+  position: relative;
+}
+
+.sobre-mi__skill-list li:last-child span::before {
+  background-color: #f29500;
+  content: '';
+  height: 1.2rem;
+  position: absolute;
+  width: 92%;
+}
+
+.sobre-mi__skill {
+  margin-top: 3rem;
+}
+
+.sobre-mi__bar {
+  background-color: #f0f4f5;
+  content: '';
+  display: block;
+  height: 1.2rem;
+  width: 100%;
 }
 
 .footer {

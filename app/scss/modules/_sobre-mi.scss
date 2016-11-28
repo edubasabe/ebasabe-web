@@ -1,0 +1,81 @@
+.sobre-mi {
+    &__profile-img {
+        border: 1px solid #ccc;
+        border-radius: 50%;
+        margin: 0 auto;
+        max-width: 202px;
+        overflow: hidden;
+    }
+
+    &__skill-list {
+        li {
+            &:first-child {
+                span {
+                    position: relative;
+
+                    &::before {
+                        background-color: $azul;
+                        content: '';
+                        height: 1.2rem;
+                        position: absolute;
+                        width: 85%;
+                    }
+                }
+            }
+
+            &:nth-child(2) {
+                span {
+                    position: relative;
+
+                    &::before {
+                        background-color: $rojo;
+                        content: '';
+                        height: 1.2rem;
+                        position: absolute;
+                        width: 52%;
+                    }
+                }
+            }
+
+            &:nth-child(3) {
+                span {
+                    position: relative;
+
+                    &::before {
+                        background-color: $verde;
+                        content: '';
+                        height: 1.2rem;
+                        position: absolute;
+                        width: 75%;
+                    }
+                }
+            }
+
+            &:last-child {
+                span {
+                    position: relative;
+
+                    &::before {
+                        background-color: $anaranjado;
+                        content: '';
+                        height: 1.2rem;
+                        position: absolute;
+                        width: 92%;
+                    }
+                }
+            }
+        }
+    }
+
+    &__skill {
+        margin-top: 3rem;
+    }
+
+    &__bar {
+        background-color: $gris-skills;
+        content: '';
+        display: block;
+        height: 1.2rem;
+        width: 100%;
+    }
+}

@@ -1,3 +1,29 @@
 .headline {
+  color: $navy-iconos;
+  font-family: $aktiv;
+  font-size: 2.4rem;
+
+  &--subtitle {
+    color: rgba($navy-iconos, .8);
+    font-size: 1.8rem;
+  }
+
+  &--title {
+    font-size: 3.4rem;
+  }
+
+  &--lead {
+    color: rgba($navy-iconos, .6);
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
+
+  &--justify {
+    text-align: justify;
+  }
+
+  &--no-margin {
+    margin: 0;
+  }
 
 }
