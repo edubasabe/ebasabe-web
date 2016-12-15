@@ -1,5 +1,8 @@
 .layout {
   &--padding-right {
-    padding-right: 115px;
+    padding-right: 30px;
+  }
+  @include xxs-device {
+    padding-right: auto;
   }
 }
