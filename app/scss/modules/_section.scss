@@ -2,5 +2,10 @@
 
   &--padding {
     padding: 8rem 0;
+
+
+    @include xxs-device {
+      padding: 4rem 0;
+    }
   }
 }

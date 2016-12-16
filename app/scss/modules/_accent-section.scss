@@ -1,0 +1,31 @@
+.accent-section {
+  background-color: $azul;
+
+  &__title {
+    color: $blanco;
+    font-size: 3rem;
+    margin: 0;
+
+    @include xxs-device {
+      padding: 0 3rem;
+      text-align: center;
+    }
+    @include sm-device {
+      padding: 0;
+      text-align: left;
+    }
+  }
+
+  &__subtitle {
+    color: $blanco;
+    font-size: 1.8rem;
+    margin: 0;
+
+    @include xxs-device {
+      text-align: center;
+    }
+    @include sm-device {
+      text-align: left;
+    }
+  }
+}
