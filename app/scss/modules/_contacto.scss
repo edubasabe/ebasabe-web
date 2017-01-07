@@ -1,0 +1,34 @@
+.contacto-section {
+  background: rgba($navy-black, .8) url('../images/contacto/contacto-bg.jpg') no-repeat;
+  background-size: cover;
+
+.headline--subtitle {
+  margin-bottom: 3rem;
+}
+
+ &__form {
+   margin: auto;
+   max-width: 628px;
+
+   label {
+     color: rgba($blanco, .2);
+     font-family: $aktiv;
+   }
+
+   .help-block {
+     color: rgba($blanco, .5);
+     font-family: $aktiv;
+   }
+
+    .hero__btn {
+      font-weight: bold;
+    }
+
+    .form-control {
+      border: .2rem solid #d9d9d9;
+      box-shadow: none;
+    }
+
+ }
+
+}

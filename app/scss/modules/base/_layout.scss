@@ -1,8 +1,14 @@
 .layout {
   &--padding-right {
-    padding-right: 30px;
+
+    @include xxs-device {
+      padding-right: auto;
+    }
+
+    @include sm-device {
+      padding-right: 30px;
+    }
+
   }
-  @include xxs-device {
-    padding-right: auto;
-  }
+
 }

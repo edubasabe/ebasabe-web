@@ -10939,13 +10939,15 @@ a:focus, a:hover {
   color: #007ff3;
 }
 
-.layout--padding-right {
-  padding-right: 30px;
+@media only screen and (min-width: 320px) {
+  .layout--padding-right {
+    padding-right: auto;
+  }
 }
 
-@media only screen and (min-width: 320px) {
-  .layout {
-    padding-right: auto;
+@media only screen and (min-width: 768px) {
+  .layout--padding-right {
+    padding-right: 30px;
   }
 }
 
@@ -11180,6 +11182,10 @@ a:focus, a:hover {
   transition: background-color .3s ease-out;
 }
 
+.btn-secondary:active, .btn-secondary:focus, .btn-secondary:visited {
+  color: #fff;
+}
+
 .btn-navy {
   background-color: rgba(11, 16, 23, 0.8);
   border: 1px solid #007ff3;
@@ -11228,13 +11234,31 @@ input[type='submit'] {
   font-size: 2.4rem;
 }
 
+.headline--title {
+  font-size: 3.4rem;
+}
+
+@media only screen and (min-width: 320px) {
+  .headline--title {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .headline--title {
+    text-align: left;
+  }
+}
+
 .headline--subtitle {
   color: rgba(59, 63, 73, 0.8);
   font-size: 1.8rem;
 }
 
-.headline--title {
-  font-size: 3.4rem;
+@media only screen and (min-width: 320px) {
+  .headline--subtitle {
+    text-align: center;
+  }
 }
 
 .headline--lead {
@@ -11249,6 +11273,14 @@ input[type='submit'] {
 
 .headline--no-margin {
   margin: 0;
+}
+
+.headline--white {
+  color: #fff;
+}
+
+.headline--white-70 {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .sobre-mi__profile-img {
@@ -11319,6 +11351,16 @@ input[type='submit'] {
   width: 100%;
 }
 
+.sobre-mi__bio {
+  margin-bottom: 3rem;
+}
+
+@media only screen and (min-width: 320px) {
+  .sobre-mi__bio {
+    margin-bottom: 4rem;
+  }
+}
+
 .accent-section {
   background-color: #007ff3;
 }
@@ -11359,6 +11401,39 @@ input[type='submit'] {
   .accent-section__subtitle {
     text-align: left;
   }
+}
+
+.contacto-section {
+  background: rgba(11, 16, 23, 0.8) url("../images/contacto/contacto-bg.jpg") no-repeat;
+  background-size: cover;
+}
+
+.contacto-section .headline--subtitle {
+  margin-bottom: 3rem;
+}
+
+.contacto-section__form {
+  margin: auto;
+  max-width: 628px;
+}
+
+.contacto-section__form label {
+  color: rgba(255, 255, 255, 0.2);
+  font-family: "AktivGrotesk-Regular", Helvetica, Arial, sans-serif;
+}
+
+.contacto-section__form .help-block {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "AktivGrotesk-Regular", Helvetica, Arial, sans-serif;
+}
+
+.contacto-section__form .hero__btn {
+  font-weight: bold;
+}
+
+.contacto-section__form .form-control {
+  border: .2rem solid #d9d9d9;
+  box-shadow: none;
 }
 
 .footer {
