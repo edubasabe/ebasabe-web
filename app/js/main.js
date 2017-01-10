@@ -46,3 +46,10 @@ $('.navbar--menu-icon').click(function() {
   }
 });
 });
+
+//---------
+// Twenty Twenty
+//----------
+$(window).load(function(){
+  $("#container1").twentytwenty();
+});

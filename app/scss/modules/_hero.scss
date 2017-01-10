@@ -65,22 +65,20 @@
     @include sm-device {
       text-align: left;
     }
-  }
 
-  &__btn {
-    float: left;
-    font-size: 1.8rem;
-    padding: 1rem 2rem;
+    &--btn {
+      float: left;
+      font-size: 1.8rem;
+      padding: 1rem 2rem;
 
-    @include xxs-device {
-      float: none;
-      margin-bottom: 3rem;
-    }
-
-    &--portafolio {
       @include xxs-device {
-        margin-right: 1rem;
+        border-radius: .3rem;
+        float: none;
+        
+        &:first-child { margin-right: 2rem;}
       }
     }
   }
+
+
 }
