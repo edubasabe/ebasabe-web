@@ -1,5 +1,5 @@
 .contacto-section {
-  background: rgba($navy-black, .8) url('../images/contacto/contacto-bg.jpg') no-repeat;
+  background: rgba($navy-black, .8) url('../../images/contacto/contacto-bg.jpg') no-repeat;
   background-size: cover;
 
 .headline--subtitle {
@@ -12,12 +12,12 @@
 
    label {
      color: rgba($blanco, .2);
-     font-family: $aktiv;
+
    }
 
    .help-block {
      color: rgba($blanco, .5);
-     font-family: $aktiv;
+
    }
 
     .hero__btn {

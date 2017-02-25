@@ -1,19 +1,21 @@
 //--
 // jQuery to collapse the navbar on scroll
 // --
-var navBar = $('.navbar');
-var pageBody = $('body');
-$(window).scroll(function() {
 
-  if (pageBody.hasClass('nav-animation')) 
-  {
-    if (navBar.offset().top > 1) {
-        $(".navbar-fixed-top").addClass("top-nav-collapse navbar--bg-color");
-    } else {
-        $(".navbar-fixed-top").removeClass("top-nav-collapse navbar--bg-color");
-    }
-  }
-});
+// $(window).scroll(function() {
+//
+//   if ($('main').hasClass('nav-animation'))
+//   {
+//     // console.log('Main tiene la clase');
+//     if ($('.navbar').offset().top > 1) {
+//       // console.log('Tiene la clase y funciona el segundo if');
+//         $(".navbar-fixed-top").addClass("top-nav-collapse navbar--bg-color");
+//     } else {
+//       // console.log('no sirve');
+//         $(".navbar-fixed-top").removeClass("top-nav-collapse navbar--bg-color");
+//     }
+//   }
+// });
 
 //--
 // jQuery for page scrolling feature - requires jQuery Easing plugin

@@ -2,6 +2,7 @@
   &-primary {
     background-color: $azul;
     color: $blanco;
+    font-weight: 600;
 
     &:hover {
       background-color: rgba($azul, .7);
@@ -14,6 +15,7 @@
     background-color: rgba(0, 126, 242, .1);
     border: 1px solid $azul;
     color: $blanco;
+    font-weight: 600;
 
     &:hover {
       background-color: $azul;
@@ -32,9 +34,11 @@
     background-color: rgba($navy-black, .8);
     border: 1px solid $azul;
     color: $blanco;
+    font-weight: 600;
 
     &--big {
       font-size: 1.8rem;
+      font-weight: 600;
       line-height: 2.4rem;
       padding: 1.1rem 3.5rem;
 

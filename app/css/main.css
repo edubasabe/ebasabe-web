@@ -10912,23 +10912,43 @@ button.close {
   clip: auto;
 }
 
-@font-face {
-  font-family: 'AktivGrotesk-Regular';
-  src: url("../../fonts/aktiv/AktivGrotesk-Regular.eot");
-  src: url("../../fonts/aktiv/AktivGrotesk-Regular.woff2") format("woff2"), url("../../fonts/aktiv/AktivGrotesk-Regular.woff") format("woff"), url("../../fonts/aktiv/AktivGrotesk-Regular.ttf") format("truetype"), url("../../fonts/aktiv/AktivGrotesk-Regular.svg#AktivGrotesk-Regular") format("svg"), url("../../fonts/aktiv/AktivGrotesk-Regular.eot?#iefix") format("embedded-opentype");
-  font-weight: normal;
-  font-style: normal;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #434c56;
+  font-weight: 600;
+  letter-spacing: -.05rem;
+  word-wrap: break-word;
+}
+
+p {
+  letter-spacing: -.05rem;
 }
 
 html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 62.5%;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant-caps: normal;
+  -webkit-font-variant-ligatures: normal;
+          font-variant-ligatures: normal;
+  font-variant-numeric: normal;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 body {
-  font-size: 16px;
-  font-family: "AktivGrotesk-Regular", Helvetica, Arial, sans-serif;
-  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  color: #8a9ea8;
+  font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-rendering: optimizeLegibility;
 }
 
 a {
@@ -11030,6 +11050,7 @@ a:focus, a:hover {
 
 .navbar-nav > li > a {
   color: #fff;
+  font-weight: 500;
   padding: 2.5rem;
 }
 
@@ -11157,6 +11178,7 @@ a:focus, a:hover {
 .btn-primary {
   background-color: #007ff3;
   color: #fff;
+  font-weight: 600;
 }
 
 .btn-primary:hover {
@@ -11170,6 +11192,7 @@ a:focus, a:hover {
   background-color: rgba(0, 126, 242, 0.1);
   border: 1px solid #007ff3;
   color: #fff;
+  font-weight: 600;
 }
 
 .btn-secondary:hover {
@@ -11187,10 +11210,12 @@ a:focus, a:hover {
   background-color: rgba(11, 16, 23, 0.8);
   border: 1px solid #007ff3;
   color: #fff;
+  font-weight: 600;
 }
 
 .btn-navy--big {
   font-size: 1.8rem;
+  font-weight: 600;
   line-height: 2.4rem;
   padding: 1.1rem 3.5rem;
 }
@@ -11218,7 +11243,6 @@ a:focus, a:hover {
 
 .form input[type='submit'] {
   border-radius: .3rem;
-  font-family: "AktivGrotesk-Regular", Helvetica, Arial, sans-serif;
   font-size: 1.8rem;
 }
 
@@ -11229,7 +11253,6 @@ a:focus, a:hover {
 
 .headline {
   color: #3b3f49;
-  font-family: "AktivGrotesk-Regular", Helvetica, Arial, sans-serif;
   font-size: 2.4rem;
 }
 
@@ -11252,6 +11275,8 @@ a:focus, a:hover {
 .headline--subtitle {
   color: rgba(59, 63, 73, 0.8);
   font-size: 1.8rem;
+  margin-bottom: 2rem;
+  margin-top: 0;
 }
 
 @media only screen and (min-width: 320px) {
@@ -11642,7 +11667,7 @@ a:focus, a:hover {
 }
 
 .contacto-section {
-  background: rgba(11, 16, 23, 0.8) url("../images/contacto/contacto-bg.jpg") no-repeat;
+  background: rgba(11, 16, 23, 0.8) url("../../images/contacto/contacto-bg.jpg") no-repeat;
   background-size: cover;
 }
 
@@ -11657,12 +11682,10 @@ a:focus, a:hover {
 
 .contacto-section__form label {
   color: rgba(255, 255, 255, 0.2);
-  font-family: "AktivGrotesk-Regular", Helvetica, Arial, sans-serif;
 }
 
 .contacto-section__form .help-block {
   color: rgba(255, 255, 255, 0.5);
-  font-family: "AktivGrotesk-Regular", Helvetica, Arial, sans-serif;
 }
 
 .contacto-section__form .hero__btn {

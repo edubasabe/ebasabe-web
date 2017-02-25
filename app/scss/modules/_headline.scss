@@ -1,6 +1,5 @@
 .headline {
   color: $navy-iconos;
-  font-family: $aktiv;
   font-size: 2.4rem;
 
   &--title {
@@ -18,6 +17,8 @@
   &--subtitle {
     color: rgba($navy-iconos, .8);
     font-size: 1.8rem;
+    margin-bottom: 2rem;
+    margin-top: 0;
 
     @include xxs-device {
       text-align: center;

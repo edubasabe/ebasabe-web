@@ -1,12 +1,23 @@
 html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 62.5%;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant-caps: normal;
+  font-variant-ligatures: normal;
+  font-variant-numeric: normal;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 body {
-  font-size: 16px;
-  font-family: $aktiv;
+  -webkit-font-smoothing: antialiased;
+  color: #8a9ea8;
+  font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased
 }
 
 a {

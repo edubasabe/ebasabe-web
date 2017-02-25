@@ -39,3 +39,4 @@ jspm_packages
 
 # Por edu
 .DS_Store
+dist/**
