@@ -52,6 +52,13 @@ gulp.task('useref', function(){
     .pipe(gulp.dest('dist'));
 });
 
+//-- Build:JS
+gulp.task('buildjs', function () {
+  return gulp.src('app/*.html')
+    .pipe(gulpIf('*.js', uglify()))
+    .pipe(gulp.dest('dist'));
+});
+
 //-- Images
 gulp.task('images', function(){
   return gulp.src('app/images/**/*.+(png|jpg|jpeg|gif|svg)')

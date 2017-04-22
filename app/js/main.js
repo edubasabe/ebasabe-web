@@ -3,7 +3,6 @@ function tablet() {
     if ($iW <= 767) {
         return true;
     }
-    // console.log($iW);
 }
 
 // ---
@@ -11,18 +10,16 @@ function tablet() {
 // ---
 if (tablet()) {
     $('.imagen').insertBefore('.texto');
-} else {
-    //  $('.texto').insertAfter('.imagen');
 }
 
 // --
 // Waypoints
 // --
-// var heroRowHeader = $('#hero .container > .row');
+
 
 var navBar = $('.navbar');
 var waypoint = new Waypoint({
-  element: document.getElementById('contact-btn'),
+  element: document.getElementById('primary'),
   handler: function(direction) {
 
     if (direction == 'down') {

@@ -1,10 +1,10 @@
 @import '../../node_modules/bootstrap/dist/css/bootstrap';
 @import '../../node_modules/font-awesome/scss/font-awesome';
-@import './modules/base/_query';
-@import './modules/base/_fonts';
-@import './modules/base/_variables';
-@import './modules/base/_global';
-@import './modules/base/_layout';
+@import './base/_query';
+@import './base/_fonts';
+@import './base/_variables';
+@import './base/_global';
+@import './base/_layout';
 @import './modules/_navbar';
 @import './modules/_hero';
 @import './modules/_section';

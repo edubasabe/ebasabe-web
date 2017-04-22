@@ -1,5 +1,5 @@
 .hero {
-  background: url('../../images/hero/bg-midnight-imagen-bg.png') no-repeat;
+  background: url('../images/hero/bg-midnight-imagen-bg.png') no-repeat;
   background-size: cover;
   min-height: 60rem;
   transition: 300s all ease-out;
@@ -74,7 +74,7 @@
       @include xxs-device {
         border-radius: .3rem;
         float: none;
-        
+
         &:first-child { margin-right: 2rem;}
       }
     }
